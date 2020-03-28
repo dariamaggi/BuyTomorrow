@@ -2,15 +2,14 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonCard
 import React from 'react';
 import { pin, wifi, wine, warning, walk } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
+import ToolBar from '../components/ToolBar';
 import './Home.css';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>My App</IonTitle>
-        </IonToolbar>
+        <ToolBar></ToolBar>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
