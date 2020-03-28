@@ -1,27 +1,19 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel } from '@ionic/react';
+import {IonThumbnail, IonImg, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonButtons } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
+import ToolBar from '../components/ToolBar';
 import './Home.css';
+import image from '../assets/home.jpg'
+
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>My App</IonTitle>
-        </IonToolbar>
+        <ToolBar></ToolBar>
       </IonHeader>
       <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonList>
-          <IonItem>
-            <IonLabel>Pokémon Yellow</IonLabel>
-          </IonItem>
-        </IonList>
+            <IonImg src={image} />
+            <IonButtons>kdjaòlkjd</IonButtons>
       </IonContent>
     </IonPage>
   );
