@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonThumbnail } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonCardContent, IonCard, IonCardHeader, IonSearchbar, IonCardSubtitle, IonCardTitle, IonThumbnail } from '@ionic/react';
 import React from 'react';
 import { pin, wifi, wine, warning, walk } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
@@ -18,15 +18,18 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
+        
         <IonThumbnail>
           <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
         </IonThumbnail>
-        <IonLabel>Gino Rossi</IonLabel>
+        <h6>Gino Rossi</h6>
 
-        <IonTitle>Dati</IonTitle>
-        <IonLabel>Via Roma 09055, Atlantide </IonLabel>
+        <h1>Dati</h1>
+        <h6>Via Roma 09055, Atlantide </h6>
         
-        <IonTitle>Articoli</IonTitle>
+        <h1>Articoli</h1>
+        <h6>Cerca i tuoi articoli</h6>
+        <IonSearchbar></IonSearchbar>
 
         <IonCard>
           <img width="150" height="80" src="https://www.r101.it/resizer/616/348/true/1467622033790_1576660195.jpg--capire_i_gatti__solo_alcune_persone_sono_in_grado_di_farlo.jpg?1576660195000" />
