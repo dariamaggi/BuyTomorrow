@@ -43,16 +43,14 @@ const Home: React.FC = () => {
           </IonItem>
           <IonLabel>N°</IonLabel>
           <IonItem>
-            <IonInput name="civic" type="number" placeholder="0" required></IonInput>
+            <IonInput name="civic" type="number" placeholder="0"  required></IonInput>
           </IonItem>
           <IonLabel>CAP</IonLabel>
           <IonItem>
             <IonInput name="cap" type="number" placeholder="00000"  required></IonInput>
           </IonItem>
           <IonButton>Accedi</IonButton>
-          <IonButton>Login con Google</IonButton>
           
-
       </IonContent>
     
     </IonPage>
