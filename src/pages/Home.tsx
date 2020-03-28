@@ -1,9 +1,12 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel } from '@ionic/react';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
 const Home: React.FC = () => {
+  const [count, setCount] = useState(0);
+
+
   return (
     <IonPage>
       <IonHeader>
@@ -22,6 +25,10 @@ const Home: React.FC = () => {
             <IonLabel>Pokémon Yellow</IonLabel>
           </IonItem>
         </IonList>
+        <div>
+          <p>You clicked {count} times</p>
+          
+        </div>
       </IonContent>
     </IonPage>
   );
