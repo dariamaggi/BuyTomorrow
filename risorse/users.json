@@ -1,0 +1,65 @@
+[
+    {
+      "email": "marshallestrada@valreda.com",
+      "password": "5e7f84b69e24ca84a9a4cb0b",
+      "name": "Pacheco",
+      "surname": "Valencia",
+      "id": "5e7f84b64fc7ad4b12b6262b"
+    },
+    {
+      "email": "pachecovalencia@valreda.com",
+      "password": "5e7f84b66c764471d755afae",
+      "name": "Leanna",
+      "surname": "Henderson",
+      "id": "5e7f84b67238ffa63ef773f9"
+    },
+    {
+      "email": "leannahenderson@valreda.com",
+      "password": "5e7f84b666764c982feccd4c",
+      "name": "Zimmerman",
+      "surname": "Chambers",
+      "id": "5e7f84b6deed6b120b946b10"
+    },
+    {
+      "email": "zimmermanchambers@valreda.com",
+      "password": "5e7f84b63e50daf61ee63e0e",
+      "name": "Clemons",
+      "surname": "Moody",
+      "id": "5e7f84b6735d991fe233fb3e"
+    },
+    {
+      "email": "clemonsmoody@valreda.com",
+      "password": "5e7f84b611c975bcb3e608a0",
+      "name": "Daphne",
+      "surname": "Mccarty",
+      "id": "5e7f84b6584fb751016f4aec"
+    },
+    {
+      "email": "daphnemccarty@valreda.com",
+      "password": "5e7f84b6df549095b1d2c616",
+      "name": "Holt",
+      "surname": "Morris",
+      "id": "5e7f84b66f01c69ce1593e97"
+    },
+    {
+      "email": "holtmorris@valreda.com",
+      "password": "5e7f84b688299c160797ca6b",
+      "name": "Shauna",
+      "surname": "Guerra",
+      "id": "5e7f84b673b68a6440a20bcd"
+    },
+    {
+      "email": "shaunaguerra@valreda.com",
+      "password": "5e7f84b657ecd42e964a7975",
+      "name": "Brewer",
+      "surname": "Mcleod",
+      "id": "5e7f84b648c63991bbb76c7b"
+    },
+    {
+      "email": "brewermcleod@valreda.com",
+      "password": "5e7f84b6f00690fd6faa4e4d",
+      "name": "Katheryn",
+      "surname": "Huff",
+      "id": "5e7f84b6b0b8e3056e1bd070"
+    }
+  ]
