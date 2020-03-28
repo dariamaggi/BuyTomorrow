@@ -8,6 +8,8 @@ import Registercompany from './pages/Registercompany';
 import Search from './pages/Search';
 
 import Login from './pages/Login';
+import Profile from './pages/Profile';
+import AddProduct from './pages/AddProduct';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -34,11 +36,12 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/home" component={Home} exact={true} />
+        <Route path="/login" component={Login} exact={true} />
+        <Route path="/profile" component={Profile} exact={true} />
+        <Route path="/addproduct" component={AddProduct} exact={true} />
         <Route path="/register" component={Register} exact={true} />
         <Route path="/registercompany" component={Registercompany} exact={true} />
         <Route path="/search" component={Search} exact={true} />
-
-        <Route path="/login" component={Login} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
