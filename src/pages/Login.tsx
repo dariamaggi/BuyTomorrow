@@ -16,6 +16,7 @@ const Login: React.FC = () => {
     if(email=='admin' && password=='admin'){
       let user={'email':email,'password':password}
       localStorage.setItem('user', JSON.stringify(user));
+      window.location.href="./profile"
     }
   }
   return (
