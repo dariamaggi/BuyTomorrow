@@ -16,7 +16,6 @@ const Home: React.FC = () => {
         <IonCol>
       <div id="begin" ><IonLabel>Inizia la ricerca!</IonLabel></div>
       <div id="parent">
-        
       <div id="child"> <IonSearchbar></IonSearchbar></div>
      
         
