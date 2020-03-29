@@ -1,7 +1,7 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
-main {
+/* main {
   position: relative;
   height:100%;
   width: 60%;
@@ -21,23 +21,7 @@ main div {
   padding: 10px;
   resize: both;
   overflow: auto;
-}
-main div p{
+} */
+/* main div p{
   padding-top: 10px;
-}
-/* #parent {
-    width: 100%; 
-    position: fixed; 
-    top: 55%;
-    text-align: center;
-  } */
-  /* #child {display: inline-block; 
-    margin: 0 auto;
-  }
-  #begin {
-    width: 100%; 
-    position: fixed; 
-    top: 50%;
-    font-size: 150%;
-    text-align: center;
-    } */
+} */
