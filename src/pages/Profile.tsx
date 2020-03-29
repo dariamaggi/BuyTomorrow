@@ -4,8 +4,11 @@ import { pin, wifi, wine, warning, walk } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import ToolBar from '../components/ToolBar';
 import './Home.css';
+import BrowseCoupons from '../components/BrowseCoupons';
 
 const Home: React.FC = () => {
+
+  const items = []
   return (
     <IonPage>
       <IonHeader>
@@ -29,35 +32,7 @@ const Home: React.FC = () => {
         <h1>Articoli</h1>
         <h6>Cerca i tuoi articoli</h6>
         <IonSearchbar></IonSearchbar>
-        <IonGrid>
-        
-          <IonRow>
-            <IonCol>
-              <IonCard>
-                <img width="150" height="80" src="https://www.r101.it/resizer/616/348/true/1467622033790_1576660195.jpg--capire_i_gatti__solo_alcune_persone_sono_in_grado_di_farlo.jpg?1576660195000" />
-                <IonCardHeader>
-                  <IonCardSubtitle>Abbigliamento</IonCardSubtitle>
-                  <IonCardTitle>Gatto</IonCardTitle>
-                </IonCardHeader>
-                <IonCardContent>
-                  Un bel gatto per addobbare il vostro soggiorno, a soli 92 cent.
-                </IonCardContent>
-              </IonCard>
-            </IonCol>
-            <IonCol>
-              <IonCard>
-                <img width="150" height="80" src="https://www.r101.it/resizer/616/348/true/1467622033790_1576660195.jpg--capire_i_gatti__solo_alcune_persone_sono_in_grado_di_farlo.jpg?1576660195000" />
-                <IonCardHeader>
-                  <IonCardSubtitle>Abbigliamento</IonCardSubtitle>
-                  <IonCardTitle>Gatto</IonCardTitle>
-                </IonCardHeader>
-                <IonCardContent>
-                  Un bel gatto per addobbare il vostro soggiorno, a soli 92 cent.
-                </IonCardContent>
-              </IonCard>
-            </IonCol>
-        </IonRow>
-      </IonGrid>
+        <BrowseCoupons></BrowseCoupons>
       </IonContent>
     </IonPage>
   );
