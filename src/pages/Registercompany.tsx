@@ -11,12 +11,16 @@ const Home: React.FC = () => {
       <IonHeader>
         <ToolBar></ToolBar>
       </IonHeader>
-      <IonContent>
+      
+        <IonContent>
+        
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
-        </IonHeader>
+          </IonHeader>
+          
+       
           <IonLabel>Nome azienda</IonLabel>
           <IonItem>
             <IonInput name="name" type="text" placeholder="MyCompany" required></IonInput>
@@ -52,6 +56,7 @@ const Home: React.FC = () => {
           <IonButton>Accedi</IonButton>
           
       </IonContent>
+      
     
     </IonPage>
   );
