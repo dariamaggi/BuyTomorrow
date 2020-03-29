@@ -13,7 +13,6 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent>
             <IonImg src={image} />
-            <IonButtons>kdjaòlkjd</IonButtons>
       </IonContent>
     </IonPage>
   );

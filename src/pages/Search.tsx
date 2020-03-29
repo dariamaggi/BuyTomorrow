@@ -5,6 +5,8 @@ import { IonSearchbar, IonToolbar,IonPage,IonTitle, IonButton, IonHeader,IonLabe
 import ToolBar from '../components/ToolBar';
 import './Home.css';
 
+import BrowseCoupons from '../components/BrowseCoupons';
+
 const Home: React.FC = () => {
   return (
     <IonPage>
@@ -13,13 +15,10 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonToolbar>
-      <IonSearchbar></IonSearchbar>
-      
-    </IonToolbar>
-    
-  </IonContent>
-
-    
+          <IonSearchbar></IonSearchbar>
+        </IonToolbar>
+        <BrowseCoupons></BrowseCoupons>
+      </IonContent>
     </IonPage>
   );
 };

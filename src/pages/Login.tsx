@@ -29,8 +29,9 @@ const Login: React.FC = (props) => {
             }
             localStorage.setItem('user', JSON.stringify(user));
             _history.push('/')
+            
           }
-          if(index==(items.length-1))
+          if(index==(items.length-1) && localStorage.getItem('user')==null)
           {
             setLogError(true)
           }
