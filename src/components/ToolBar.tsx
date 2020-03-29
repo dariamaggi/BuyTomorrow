@@ -12,6 +12,12 @@ const ToolBar: React.FC<ContainerProps> = () => {
 
     }
 
+    let lo_button = <IonButton fill="outline" type="submit" onClick={() => logout()}>Logout </IonButton>
+
+    console.log('log user', localStorage.getItem('user'))
+    if (localStorage.getItem('user') === null) {
+        lo_button = <IonItem></IonItem>
+    }
     
     return (
         
@@ -21,7 +27,7 @@ const ToolBar: React.FC<ContainerProps> = () => {
                 
                 <IonButton fill="outline" type="submit"  routerLink="/login">Login</IonButton>
                 <IonButton fill="outline" type="submit" routerLink="/register">Registrati</IonButton>
-                <IonButton fill="outline" type="submit" onClick={() => logout()}>Logout </IonButton>
+                {lo_button}
                 </IonRow>
 
             <IonItem>
