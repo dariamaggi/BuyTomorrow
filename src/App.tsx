@@ -7,10 +7,11 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import Registercompany from './pages/Registercompany';
 import Search from './pages/Search';
-
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import AddProduct from './pages/AddProduct';
+import Purchase from './pages/Purchase';
+import Product from './pages/Product';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -43,11 +44,11 @@ const App: React.FC = () => {
         <IonRouterOutlet>
           <Route path="/home" component={Home} exact={true} />
           <Route path="/login" component={Login} exact={true} />
-          <Route path="/user" component={User} exact={true} />
-          <Route path="/profile" component={Profile} exact={true} />
           <Route path="/register" component={Register} exact={true} />
           <Route path="/registercompany" component={Registercompany} exact={true} />
           <Route path="/search" component={Search} exact={true} />
+          <Route path="/product" component={Product} exact={true} />
+
           <Route exact path="/" render={() => <Redirect to="/home" />} />
 
 
@@ -63,6 +64,13 @@ const App: React.FC = () => {
           ) : (
               <Route path="/addproduct" component={Login} exact={true} />
             )}
+          {localStorage.getItem('user') ? (
+            <Route path="/purchase" component={Purchase} exact={true} />
+          ) : (
+            <Route path="/purchase" component={Login} exact={true} />
+            )}
+                  
+
 
           
 
@@ -72,6 +80,7 @@ const App: React.FC = () => {
 
   )
 };
+
 
 
 
