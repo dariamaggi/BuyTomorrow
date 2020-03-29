@@ -28,6 +28,7 @@ const Login: React.FC = (props) => {
               "id": item['id']
             }
             localStorage.setItem('user', JSON.stringify(user));
+            window.location.reload(false);
             _history.push('/')
             
           }

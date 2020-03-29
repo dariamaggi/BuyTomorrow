@@ -37,7 +37,7 @@ import UserContext from './context/user';
 
 const App: React.FC = () => {
   return (
-
+    
     <IonApp>
       <IonReactRouter >
         <IonRouterOutlet>
