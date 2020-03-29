@@ -2,8 +2,18 @@ import React from 'react';
 import { IonSearchbar, IonToolbar,IonPage,IonTitle, IonButton, IonHeader,IonLabel,IonItem,IonInput,IonSelectOption, IonSelect, IonImg, IonContent } from '@ionic/react';
 import ToolBar from '../components/ToolBar';
 import './Home.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  useLocation
+} from "react-router-dom";
 
-const Home: React.FC = () => {
+
+const Product: React.FC = (props) => {
+  
+  const location = useLocation();
+  const id=location.search.substr(4)
+
   return (
     <IonPage>
       <IonHeader>
@@ -15,6 +25,7 @@ const Home: React.FC = () => {
         <h6>10$</h6>
         <h6>Breve descrizione molto esplicativa ma alla fine quello che importa e vedere se funziona bene il tutto non è importante come fosse antani</h6>
         <IonItem>
+          
           <IonLabel>Quantità</IonLabel>
           <IonSelect value="quantità">
             <IonSelectOption value="cat">1</IonSelectOption>
@@ -28,5 +39,5 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Product;
 

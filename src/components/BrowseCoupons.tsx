@@ -16,10 +16,11 @@ const BrowseCoupons: React.FC<ContainerProps> = () => {
             setValue(data)
         });
 
+
     let items = []
     for (const v of value) {
         items.push(<IonCol col-1 col-xl-2 col-lg-3 col-md-4>
-            <IonCard>
+            <IonCard routerLink={"./product?id="+v["id"]}>
             <img width="150" height="80" src="https://www.r101.it/resizer/616/348/true/1467622033790_1576660195.jpg--capire_i_gatti__solo_alcune_persone_sono_in_grado_di_farlo.jpg?1576660195000" />
             <IonCardHeader>
                 <IonCardSubtitle>Abbigliamento</IonCardSubtitle>
