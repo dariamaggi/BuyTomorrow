@@ -1,6 +1,7 @@
 import React from 'react';
 import {IonButton, IonRow, IonItem, IonTitle, IonToolbar, IonIcon} from '@ionic/react';
 
+import Tab from '../components/Tab';
 
 interface ContainerProps { }
 
@@ -18,7 +19,13 @@ const ToolBar: React.FC<ContainerProps> = () => {
                 <IonButton fill="outline" type="submit" routerLink="/register">Registrati</IonButton>
             
                 </IonRow>
+                <IonButton fill="outline" type="submit" routerLink="/login">Accedi</IonButton>
+
+            <IonItem>
+                <Tab></Tab>
+            </IonItem>
         </IonToolbar>
+        
     );
 };
 
