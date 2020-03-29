@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonItem, IonInput, IonButton, IonLabel, IonList, IonRouterLink } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonItem, IonInput, IonButton, IonLabel, IonList, IonRouterLink, IonAlert } from '@ionic/react';
 import React, { useState, useContext } from 'react';
 import UserContext from './../context/user'
 import ExploreContainer from '../components/ExploreContainer';
@@ -11,6 +11,7 @@ import { Redirect, useHistory } from 'react-router';
 const Login: React.FC = (props) => {
   const [email, setEmail] = useState<string>();
   const [password, setPassword] = useState<string>();
+  const [logError, setLogError] = useState(false);
   let _history = useHistory()
   let login = () => {
     fetch('https://raw.githubusercontent.com/rokity/BuyTomorrow/master/risorse/users.json')
@@ -19,7 +20,7 @@ const Login: React.FC = (props) => {
       })
       .then((data) => {
         let items: [] = data
-        items.forEach(function (item) {
+        items.forEach(function (item,index) {
           if (item['email'] == email && item['password'] == password) {
             let user = {
               'email': email, "name": item['name'],
@@ -28,6 +29,10 @@ const Login: React.FC = (props) => {
             }
             localStorage.setItem('user', JSON.stringify(user));
             _history.push('/')
+          }
+          if(index==(items.length-1))
+          {
+            setLogError(true)
           }
         })
 
@@ -40,7 +45,7 @@ const Login: React.FC = (props) => {
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
-          <IonToolbar>
+          <IonToolbar>            
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
@@ -59,6 +64,14 @@ const Login: React.FC = (props) => {
         <IonButton onClick={() => login()}>Accedi</IonButton>
 
         <IonRouterLink href="/login" class="underline">Non sei registrato?</IonRouterLink>
+        <IonAlert
+          isOpen={logError}
+          onDidDismiss={() => setLogError(false)}
+          header={'Errore'}
+          
+          message={'Utente non trovato.'}
+          buttons={['OK']}
+        />
       </IonContent>
     </IonPage>
   );
