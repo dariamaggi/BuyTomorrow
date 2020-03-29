@@ -1,4 +1,4 @@
-import {IonThumbnail, IonCol,IonButton, IonSearchbar, IonContent, IonHeader, IonPage, IonLabel, IonButtons } from '@ionic/react';
+import { IonThumbnail, IonCol, IonButton, IonSearchbar, IonContent, IonHeader, IonPage, IonLabel, IonButtons } from '@ionic/react';
 import React from 'react';
 import ToolBar from '../components/ToolBar';
 import './Home.css';
@@ -11,19 +11,20 @@ const Home: React.FC = () => {
       <IonHeader>
         <ToolBar></ToolBar>
       </IonHeader>
-      
+
       <IonContent >
         <IonCol>
-      <div id="begin" ><IonLabel>Inizia la ricerca!</IonLabel></div>
-      <div id="parent">
-      <div id="child"> <IonSearchbar></IonSearchbar></div>
-     
-        
-      </div> 
-      </IonCol>
-   </IonContent>
-     
-    </IonPage>
+          <main>
+            <div>
+              <IonLabel>Inizia la ricerca!</IonLabel>
+              <p><IonSearchbar></IonSearchbar></p>
+              
+            </div>
+          </main>
+        </IonCol>
+      </IonContent>
+
+    </IonPage >
   );
 };
 
