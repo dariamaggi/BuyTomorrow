@@ -19,7 +19,6 @@ const ToolBar: React.FC<ContainerProps> = () => {
                 <IonButton fill="outline" type="submit" routerLink="/register">Registrati</IonButton>
             
                 </IonRow>
-                <IonButton fill="outline" type="submit" routerLink="/login">Accedi</IonButton>
 
             <IonItem>
                 <Tab></Tab>

@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { IonCol, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonCardContent, IonCard, IonCardHeader, IonSearchbar, IonCardSubtitle, IonCardTitle, IonThumbnail, IonGrid, IonRow } from '@ionic/react';
 import React from 'react';
-=======
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonTabBar, IonBadge, IonIcon,  IonCardContent, IonCard, IonTabs, IonTabButton, IonCardHeader, IonSearchbar, IonCardSubtitle, IonCardTitle, IonThumbnail } from '@ionic/react';
-import React,{useState, useEffect} from 'react';
->>>>>>> gab709
 import { pin, wifi, wine, warning, walk } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import ToolBar from '../components/ToolBar';
