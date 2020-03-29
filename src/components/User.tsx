@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
 
 
-import { construct } from 'ionicons/icons';
+import { construct, constructOutline } from 'ionicons/icons';
 import { Component } from 'react';
 
 
@@ -14,8 +14,9 @@ function User({ value = 'RIccardo' }) {
             return response.json();
         })
         .then((data) => {
-            console.log(data)
-            setUtenti(data)
+            
+            setUtenti(data[0])
+            
             
         });
     },[])

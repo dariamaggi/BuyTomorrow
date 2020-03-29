@@ -48,7 +48,7 @@ const App: React.FC = () => {
           <Route path="/registercompany" component={Registercompany} exact={true} />
           <Route path="/search" component={Search} exact={true} />
           <Route path="/product" component={Product} exact={true} />
-
+          <Route path="/user" component={User} exact={true} />
           <Route exact path="/" render={() => <Redirect to="/home" />} />
 
 
