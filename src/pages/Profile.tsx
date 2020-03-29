@@ -35,7 +35,7 @@ const Home: React.FC = () => {
           </IonRow>
         <h1>Articoli acquistati</h1>
         <h6>Cerca i tuoi articoli</h6>
-        <IonSearchbar></IonSearchbar>
+       
 
         <BrowseCoupons></BrowseCoupons>
 
