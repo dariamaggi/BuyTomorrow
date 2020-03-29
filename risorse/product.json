@@ -3,40 +3,45 @@
       "id": "5e7f8c6fb5d80f94407fa6d8",
       "stock": 5,
       "seller_id": "5e7f84b64fc7ad4b12b6262b",
-      "description": "Bla bla bla bla",
-      "name": "Leioni di chitarra",
-      "price": 36
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Lezioni di chitarra",
+      "price": 36,
+      "img_url":"https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_960_720.jpg"
     },
     {
       "id": "5e7f8c6f6bbe2acf1ae8dcca",
       "stock": 5,
       "seller_id": "5e7f84b67238ffa63ef773f9",
-      "description": "Bla bla bla bla",
-      "name": "Leioni di chitarra",
-      "price": 30
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Lezioni di canto",
+      "price": 30,
+      "img_url":"https://cdn.pixabay.com/photo/2016/01/10/21/05/mic-1132528_960_720.jpg"
     },
     {
       "id": "5e7f8c6f1a2bb57e55df5f62",
       "stock": 5,
       "seller_id": "5e7f84b6deed6b120b946b10",
-      "description": "Bla bla bla bla",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "name": "Cena per due",
-      "price": 21
+      "price": 21,
+      "img_url":"https://cdn.pixabay.com/photo/2015/09/02/12/43/meal-918639_960_720.jpg"
     },
     {
       "id": "5e7f8c6fcccb2b88d6691434",
       "stock": 4,
       "seller_id": "5e7f84b6735d991fe233fb3e",
-      "description": "Bla bla bla bla",
-      "name": "Leioni di chitarra",
-      "price": 19
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Giornata alla terme",
+      "price": 19,
+      "img_url":"https://cdn.pixabay.com/photo/2017/04/03/15/48/saturnia-2198749_960_720.jpg"
     },
     {
       "id": "5e7f8c6f361eddcddd4f3675",
       "stock": 3,
       "seller_id": "5e7f84b6584fb751016f4aec",
-      "description": "Bla bla bla bla",
-      "name": "Buono 10$",
-      "price": 12
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "name": "Viaggio in una meta europea a scelta",
+      "price": 12,
+      "img_url":"https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg"
     }
   ]
