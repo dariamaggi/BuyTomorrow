@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { IonSearchbar, IonToolbar,IonPage,IonTitle, IonButton,IonCard, IonCardContent,IonCardHeader, IonCardTitle, IonCardSubtitle, IonHeader,IonLabel,IonItem,IonInput, IonContent } from '@ionic/react';
 import ToolBar from '../components/ToolBar';
