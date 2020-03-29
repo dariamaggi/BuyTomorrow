@@ -15,7 +15,7 @@ const BrowseCoupons: React.FC<ContainerProps> = () => {
             return response.json();
         })
         .then((data) => {
-            setValue(JSON.parse(data))
+            setValue(data)
         });
 
     function load_cards(query: string) {  
