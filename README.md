@@ -1,2 +1,2 @@
 # BuyTomorrow
-Application for the Hack@Home by Team Argonauti. Ionic with React.
+Application for the Hack@Home by Team Error 404: Name not found!. Ionic with React.
