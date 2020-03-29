@@ -1,17 +1,21 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonItem, IonInput, IonButton, IonLabel, IonList, IonRouterLink } from '@ionic/react';
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
+import UserContext from './../context/user'
 import ExploreContainer from '../components/ExploreContainer';
 import ToolBar from '../components/ToolBar';
 
 import './Home.css';
 import App from '../App';
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   const [email, setEmail] = useState<string>();
   const [password, setPassword] = useState<string>();
+  // const { user,setUser } = useContext(UserContext);
+  
   let login = () => {
     if(email=='admin' && password=='admin'){
-        
+      let user={'email':email,'password':password}
+      localStorage.setItem('user', JSON.stringify(user));
     }
   }
   return (
@@ -45,4 +49,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Login;

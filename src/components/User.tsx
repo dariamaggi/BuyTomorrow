@@ -14,7 +14,9 @@ function User({ value = 'RIccardo' }) {
             return response.json();
         })
         .then((data) => {
+            console.log(data)
             setUtenti(data)
+            
         });
     },[])
     

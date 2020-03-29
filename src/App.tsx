@@ -1,4 +1,5 @@
-import React,{ useGlobal } from 'reactn';
+import { useGlobal } from 'reactn';
+import React, { useState, useContext } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -32,32 +33,45 @@ import './theme/variables.css';
 import { register } from './serviceWorker';
 import { construct } from 'ionicons/icons';
 import User from './components/User';
+import UserContext from './context/user';
 
 const App: React.FC = () => {
-  const [isAuthed, setAuthed] = useGlobal(false);
-  return(
-  <IonApp>
-    <IonReactRouter >
-      <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route path="/login" component={Login} exact={true} />
-        
-        <Route path="/profile" component={Profile} exact={true} render={props => {
-    return isAuthed ? <Profile/> : <Login />;
-  }} />
-        <Route path="/addproduct" component={AddProduct} exact={true} render={props => {
-    return isAuthed ? <AddProduct/> : <Login />;
-  }}/>
-        <Route path="/register" component={Register} exact={true} />
-        <Route path="/registercompany" component={Registercompany} exact={true} />
-        <Route path="/search" component={Search} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
-        
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+  return (
+
+    <IonApp>
+      <IonReactRouter >
+        <IonRouterOutlet>
+          <Route path="/home" component={Home} exact={true} />
+          <Route path="/login" component={Login} exact={true} />
+          <Route path="/user" component={User} exact={true} />
+          <Route path="/profile" component={Profile} exact={true} />
+          <Route path="/register" component={Register} exact={true} />
+          <Route path="/registercompany" component={Registercompany} exact={true} />
+          <Route path="/search" component={Search} exact={true} />
+          <Route exact path="/" render={() => <Redirect to="/home" />} />
+
+
+          
+          {/* IN QUESTO Pezzo di codice qua sotto si definiscono i path in cui devi essere */}
+          {localStorage.getItem('user') ? (
+            <Route path="/profile" component={Profile} exact={true} />
+          ) : (
+              <Route path="/profile" component={Login} exact={true} />
+            )}
+          {localStorage.getItem('user') ? (
+            <Route path="/addproduct" component={AddProduct} exact={true} />
+          ) : (
+              <Route path="/addproduct" component={Login} exact={true} />
+            )}
+
+          
+
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </IonApp>
+
   )
-  };
+};
 
 
 
