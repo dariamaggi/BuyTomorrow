@@ -1,3 +1,20 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+#parent {
+    width: 100%; 
+    position: fixed; /* or absolute */
+    top: 55%;
+    text-align: center;
+  }
+  #child {display: inline-block; 
+    margin: 0 auto;
+  }
+  #begin {
+    width: 100%; 
+    position: fixed; 
+    top: 50%;
+    font-size: 150%;
+    text-align: center;
+    }

@@ -1,4 +1,4 @@
-import { IonContent, IonIcon,IonHeader, IonPage, IonTitle, IonToolbar, IonItem, IonInput, IonButton, IonLabel, IonList, IonRouterLink } from '@ionic/react';
+import { IonContent, IonCol,IonHeader, IonPage, IonTitle, IonToolbar, IonItem, IonInput, IonButton, IonLabel, IonList, IonRouterLink, IonRow } from '@ionic/react';
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import ToolBar from '../components/ToolBar';
@@ -18,14 +18,18 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-          <IonLabel>Nome</IonLabel>
-          <IonItem>
+        <div id="parent">
+          <div id="childer">
+              <IonLabel >Nome</IonLabel>
+          <IonItem >
             <IonInput name="name" type="text" placeholder="Marco" required></IonInput>
           </IonItem>
-          <IonLabel>Cognome</IonLabel>
-          <IonItem>
+          
+          <IonLabel >Cognome</IonLabel>
+          <IonItem  >
             <IonInput name="surname" type="text" placeholder="Rossi" required></IonInput>
           </IonItem>
+       
           <IonLabel>Email</IonLabel>
           <IonItem>
             <IonInput name="email" type="email" placeholder="rossi@mymail.com" required></IonInput>
@@ -40,7 +44,8 @@ const Home: React.FC = () => {
           </IonItem>
           <IonButton>Accedi</IonButton>
           <IonButton>Login con Google</IonButton>
-          
+          </div>
+          </div>
 
       </IonContent>
     
